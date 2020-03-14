@@ -1,0 +1,145 @@
+:root {
+    --body-color: #000215;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+#switch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#screen-suport{
+    width: 60vw;
+    height: 30vw;
+    background-color: rgb(59, 59, 59);
+}
+
+#screen-suport::before, #screen-suport::after{
+    content: '';
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--body-color);
+}
+
+#screen-suport::before{
+    float: left;
+    border-radius: 0vh 0vh 5vh 0vh;
+}
+
+#screen-suport::after{
+    float: right;
+    border-radius: 0vh 0vh 0vh 5vh;
+}
+
+#screen-border{
+    position: fixed;
+    width: 92%;
+    height: 90%;
+    background-color: black;
+    border-radius: 2vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#screen{
+    position: fixed;
+    width: 90%;
+    height: 85%;
+    background-color: rgb(12, 12, 12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.controller{
+    width: 11vw;
+    height: 30vw;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#controller-1{
+    background-color: #5667ff;
+    border-radius: 5vw 0.3vw 0.3vw 5vw;
+    margin-left: 9vw;
+}
+
+#controller-2{
+    background-color: #ff5656;
+    border-radius: 0.3vw 5vw 5vw 0.3vw;
+    margin-left: 80vw;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.joystick{
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(59, 59, 59);
+    margin: 0 auto;
+}
+
+#joystick-1{
+    margin-top: 6vw;
+}
+
+#joystick-2{
+    margin-top: 3vw;
+}
+
+#buttons-1{
+    margin-top: 3vw;
+}
+
+#buttons-2{
+    margin-top: 6vw;
+}
+
+
+.buttons{
+    width: 6.6vw;
+    height: 6.6vw;
+    margin: 0 auto;
+}
+
+.button{
+    width: 2.2vw;
+    height: 2.2vw;
+    background-color: rgb(59, 59, 59);
+    
+}
+
+.button-1{
+    margin: 0 auto;
+}
+
+.button-2{
+    float: left;
+}
+
+.button-3{
+    float: right;
+}
+
+
+.button-4{
+    margin: 0 auto;
+}
+
+.button-4::before{
+    content: '';
+    display: block;
+    margin-top: 2.2vw;
+}
