@@ -1,0 +1,19 @@
+@keyframes move-up-and-down {
+    0% {margin-top: -1vh;}
+    5% {margin-top: -5vh;}
+    70% {margin-top: -30vh;}
+    90%{margin-top: -10vh}
+    95%{margin-top: -3vh;}
+    100%{margin-top: 0vh;}
+}
+
+@keyframes load {
+    5% {width: 10%;}
+    60% {width: 90%;}
+   100% {width: 100%;}
+}
+
+.controller:hover{
+    animation-name: move-up-and-down;
+    animation-duration: 7s;
+}
